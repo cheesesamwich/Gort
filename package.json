@@ -1,0 +1,26 @@
+{
+  "name": "gort",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsx src/bot.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@orchidjs/unicode-variants": "^1.0.4",
+    "canvas": "^2.11.2",
+    "discord.js": "^14.14.1",
+    "fs": "^0.0.1-security",
+    "luxon": "^3.4.4",
+    "openai": "^4.28.4",
+    "play-sound": "^1.1.6",
+    "puppeteer": "^22.5.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.2"
+  }
+}
