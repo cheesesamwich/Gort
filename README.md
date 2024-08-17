@@ -1,3 +1,9 @@
 # Gort
 A discord bot i sometimes use
-![image](https://github.com/cheesesamwich/Gort/assets/149597648/71d4e815-fd27-4652-b707-d1f618f1ade9)
+
+![9edec6c5877eb97767e9de2817310001](https://github.com/user-attachments/assets/8b0952a1-c2b3-4ebe-a043-4c43820c0331)
+
+## Installation Guide?
+Figure it out yourself
+This bot absolutely sucks
+Put the token in the env and do the beep boop thing
