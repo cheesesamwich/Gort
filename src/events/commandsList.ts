@@ -16,6 +16,11 @@ export const commandsList: SimpleCommand[] =
         func: interaction => interaction.reply("gort")
     },
     {
+        name: "hisname", 
+        description: "Replies with the gort meme",
+        func: interaction => interaction.reply("https://files.catbox.moe/qrhy0g.jpg")
+    },
+    {
         name: "pfp",
         description: "Gets the profile picture of a user",
         func: interaction => 
