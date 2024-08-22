@@ -53,9 +53,11 @@ export const commandsList: SimpleCommand[] =
         {
             const userParameter : User = interaction.options.getUser("user", true);
             
-            const badge = await fetch("https://badges.vencord.dev/badges.json").then(e => e.json())[userParameter.id];
+            const response = await fetch("https://badges.vencord.dev/badges.json").then(e => e.json());
 
-            if(!badge)
+            const badges = response[userParameter.id];
+
+            if(!badges.length)
             {
                 interaction.reply("this person doesn't have a badge you IDIOT...");
                 return;
@@ -64,7 +66,7 @@ export const commandsList: SimpleCommand[] =
             interaction.reply({embeds: 
             [
                 new EmbedBuilder().setDescription(`<@${userParameter.id}>'s badge(s)`),
-                ...badge.map(e => 
+                ...badges.map(e => 
                     new EmbedBuilder().setTitle(e.tooltip).setImage(e.badge)
                 )
             ]});
