@@ -57,7 +57,7 @@ export const commandsList: SimpleCommand[] =
 
             const badges = response[userParameter.id];
 
-            if(!badges.length)
+            if(!badges?.length)
             {
                 interaction.reply("this person doesn't have a badge you IDIOT...");
                 return;
